@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BOCHA — Coming Soon</title>
+  <meta name="description" content="Productora de creatividad con IA. Muy pronto.">
+  <meta property="og:title" content="BOCHA — Coming Soon">
+  <meta property="og:description" content="Productora de creatividad con IA. Muy pronto.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/social-card.png">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000000;
+      --fg: #ffffff;
+      --muted: #9AA0A6;
+      --accent: #00FFE1;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      display: grid;
+      place-items: center;
+    }
+    .wrap {
+      width: min(92vw, 720px);
+      text-align: center;
+      padding: 48px 24px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      opacity: .96;
+    }
+    .logo img { width: 44px; height: 44px; }
+    .logo span { font-weight: 800; letter-spacing: 1px; font-size: 20px; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(40px, 7vw, 64px);
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0 0 28px;
+      font-size: clamp(18px, 2.6vw, 22px);
+      color: var(--muted);
+      font-weight: 600;
+    }
+    a.mail {
+      display: inline-block;
+      border: 0;
+      background: var(--fg);
+      color: #000;
+      padding: 14px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      outline: none;
+      box-shadow: 0 6px 18px rgba(255,255,255,.08);
+      transition: transform .08s ease, box-shadow .2s ease;
+    }
+    a.mail:hover { transform: translateY(-1px); box-shadow: 0 12px 28px rgba(255,255,255,.12); }
+    .note { margin-top: 16px; font-size: 13px; color: var(--muted); opacity: .8; }
+    /* subtle glow behind logo/text */
+    .glow {
+      position: fixed;
+      inset: -20vmax;
+      pointer-events: none;
+      background: radial-gradient(60vmax 60vmax at 50% 40%, rgba(0,255,225,.08), transparent 60%);
+      filter: blur(40px);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <main class="wrap">
+    <div class="logo">
+      <img src="/assets/logo-bocha.svg" alt="BOCHA logo" />
+      <span>BOCHA</span>
+    </div>
+    <h1>COMING SOON</h1>
+    <p>hola@bocha.ai</p>
+    <a class="mail" href="mailto:hola@bocha.ai">Escribinos</a>
+    <div class="note">© <span id="y"></span> BOCHA — Creatividad con IA</div>
+  </main>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
