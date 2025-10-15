@@ -4,6 +4,11 @@
       "source": "/milkshakeipa",
       "destination": "https://www.youtube.com/watch?v=jtcrey7quN0&list=PLLfVeYlHp94egctrzjbbXOlpaXZcQyJdq",
       "permanent": true
+    },
+    {
+      "source": "/voyafumar",
+      "destination": "https://www.youtube.com/watch?v=jzwsQxCebJQ",
+      "permanent": false
     }
   ]
 }
