@@ -6,8 +6,18 @@
       "permanent": true
     },
     {
+      "source": "/milkshakeipa/",
+      "destination": "https://www.youtube.com/playlist?list=PLRJiDYl1hsB-NbnCKzsF1FaRJ9WVhsgBJ",
+      "permanent": true
+    },
+    {
+      "source": "/voyafumar",
+      "destination": "https://www.youtube.com/watch?v=g84pskjDXDE",
+      "permanent": true
+    },
+    {
       "source": "/voyafumar/",
-      "destination": "youtube.com/watch?v=g84pskjDXDE&feature=youtu.be",
+      "destination": "https://www.youtube.com/watch?v=g84pskjDXDE",
       "permanent": true
     }
   ]
