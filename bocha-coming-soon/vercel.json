@@ -2,13 +2,13 @@
   "redirects": [
     {
       "source": "/milkshakeipa",
-      "destination": "https://www.youtube.com/watch?v=jtcrey7quN0&list=PLLfVeYlHp94egctrzjbbXOlpaXZcQyJdq",
+      "destination": "https://www.youtube.com/playlist?list=PLRJiDYl1hsB-NbnCKzsF1FaRJ9WVhsgBJ",
       "permanent": true
     },
     {
-      "source": "/voyafumar",
-      "destination": "https://www.youtube.com/watch?v=jzwsQxCebJQ",
-      "permanent": false
+      "source": "/milkshakeipa/",
+      "destination": "https://www.youtube.com/playlist?list=PLRJiDYl1hsB-NbnCKzsF1FaRJ9WVhsgBJ",
+      "permanent": true
     }
   ]
 }
