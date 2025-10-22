@@ -19,6 +19,15 @@
       "source": "/voyafumar/",
       "destination": "https://www.youtube.com/watch?v=g84pskjDXDE",
       "permanent": true
+    },
+     {
+      "source": "/projects",
+      "destination": "https://www.upwork.com/agencies/1977804186477747062/",
+      "permanent": true
+    },
+    {
+      "source": "/projects/",
+      "destination": "https://www.upwork.com/agencies/1977804186477747062/",
+      "permanent": true
     }
-  ]
-}
+
