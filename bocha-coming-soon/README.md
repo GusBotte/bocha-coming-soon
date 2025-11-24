@@ -1,20 +1,20 @@
-# BOCHA — Coming Soon
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Archivos listos para subir a Vercel como proyecto estático.
+# Run and deploy your AI Studio app
 
-## Estructura
-- `index.html`: página principal
-- `assets/logo-bocha.svg`: logo SVG (podés reemplazar por el tuyo con el mismo nombre)
-- `assets/favicon.svg`: favicon
-- `assets/social-card.png`: imagen para compartir (OG)
+This contains everything you need to run your app locally.
 
-## Subida rápida a Vercel (drag & drop)
-1. Ir a https://vercel.com/new
-2. Click en **"Import Project"** → pestaña **"Deploy from your computer"**
-3. Arrastrar la carpeta completa y soltar.
-4. Click en **Deploy**.
+View your app in AI Studio: https://ai.studio/apps/drive/1dKKXlUrxWbvWpohASN_5DiX3Xr40qGum
 
-## Conectar dominio (cuando lo compres)
-Dashboard del proyecto → **Settings** → **Domains** → Agregar `bocha.ai` → seguir instrucciones de DNS.
+## Run Locally
 
-—
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
