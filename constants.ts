@@ -1,7 +1,31 @@
+
 import { Project, WorkflowItem } from './types';
 
 export const projects: Project[] = [
-  // 1. ME VOY A FUMAR
+  // 1. LA NACIÓN
+  {
+    id: 'la-nacion',
+    title: { en: "LA NACIÓN", es: "LA NACIÓN" },
+    category: 'AI AD',
+    image: 'https://i.postimg.cc/8kXcrbFv/thumb.png',
+    date: '2025.12.01',
+    shortDescription: {
+      en: "A journey through the first 30 years of lanacion.com",
+      es: "Un viaje a través de los primeros 30 años de lanacion.com"
+    },
+    fullDescription: {
+      en: "A project that allowed us to combine AI agent training with meticulous attention to the details of each era: from layouts and devices to the fashion and visual mood of every moment.\n\nAll of this came together in an edit designed to let the story flow with rhythm and continuity, traversing time without losing identity.",
+      es: "Un proyecto que nos permitió combinar entrenamiento de agentes IA con mucho cuidado por los detalles de cada época: desde los layouts y los dispositivos hasta las modas y el clima visual de cada momento.\n\nTodo esto se unió en una edición pensada para que la historia fluya con ritmo y continuidad, recorriendo el tiempo sin perder identidad."
+    },
+    videos: [
+      { title: "Main Video", src: "https://player.vimeo.com/video/1148951348?badge=0&autopause=0&player_id=0&app_id=58479" }
+    ],
+    client: "La Nación",
+    services: ["AI generated videos", "Editing", "Sound Design", "Music"],
+    tools: ["Gemini", "Nano Banana", "Veo 3.1", "Kling", "Suno", "Photoshop", "Premiere", "After Effects", "DaVinci Resolve"]
+  },
+
+  // 2. ME VOY A FUMAR
   {
     id: 'voy-a-fumar',
     title: { en: "ME VOY A FUMAR", es: "ME VOY A FUMAR" },
@@ -13,7 +37,6 @@ export const projects: Project[] = [
       en: "“Me voy a Fumar” is an entertainment piece produced entirely with artificial intelligence.\n\nCreated by @gusbotteok, co-founder of Bocha, it blends humor, realism, and everyday Argentine life with a cinematic aesthetic and consistent characters throughout the story.\n\nEach scene was generated with visual continuity, natural expressions, and a costumbrista tone that makes everything feel real — even though it was all created by AI.\n\nThe song itself was composed and produced using AI as well, carefully crafted to capture the spirit and rhythm of reggae.\n\nThe piece is part of a series of videos projected before each of Luciano Mellera’s live shows during his international tour, showcasing how artificial intelligence can be used as a creative tool in live entertainment.",
       es: "“Me voy a Fumar” es una pieza de entretenimiento producida enteramente con inteligencia artificial.\n\nCreada por @gusbotteok, cofundador de Bocha, mezcla humor, realismo y costumbrismo argentino con una estética cinematográfica y personajes consistentes a lo largo de la historia.\n\nCada escena fue generada con continuidad visual, expresiones naturales y un tono costumbrista que hace que todo se sienta real, aunque todo fue creado por IA.\n\nLa canción también fue compuesta y producida con IA, cuidadosamente diseñada para capturar el espíritu y el ritmo del reggae.\n\nLa pieza es parte de una serie de videos proyectados antes de cada show en vivo de Luciano Mellera durante su gira internacional, mostrando cómo la inteligencia artificial puede usarse como una herramienta creativa en el entretenimiento en vivo."
     },
-    // LINK VIMEO NATIVO
     videos: [
       { title: "Main Video", src: "https://player.vimeo.com/video/1140166613?badge=0&autopause=0&player_id=0&app_id=58479" }
     ],
@@ -22,7 +45,7 @@ export const projects: Project[] = [
     tools: ["Nano Banana", "Imagen 4", "Photoshop", "Veo 3", "Premiere", "DaVinci Resolve", "Suno", "Eleven Labs"]
   },
 
-  // 2. ESBUENISIMO LABS (CÓNDOR)
+  // 3. ESBUENISIMO LABS (CÓNDOR)
   {
     id: 'esbuenisimo-labs',
     title: { en: "EsBuenisimo Labs", es: "EsBuenisimo Labs" },
@@ -35,7 +58,6 @@ export const projects: Project[] = [
       
       es: "Nuestro ADN nos permite ser un hub creativo que se involucra desde el momento 0 del brief, estructurando y dirigiendo cada etapa del proceso.\n\nEso mismo hicimos junto a Agencia SEO en Chile ESBUENISIMO LABS, tomando como punto de partida un dato muy interesante: El Cóndor Andino es el animal que vuela más alto y que puede sostener su vuelo durante más tiempo, aprovechando las corrientes para reducir el esfuerzo.\n\nDesde una mirada SEO, lo reinterpretamos como la misión central de Esbuenísimo Labs: ayudar a que las marcas aprovechen sus propias corrientes —optimización, contenido estratégico, link building inteligente— para escalar posiciones con el menor esfuerzo económico y el máximo rendimiento.\n\nA partir de esa estrategia desarrollamos una ejecución técnica y cuidada, basada en un pipeline híbrido IA + dirección creativa. Trabajamos con:\n\n- Consistencia cross-shot: garantizando continuidad visual entre planos generados por distintos modelos y seeds.\n- Motion direccionado: diseñando curvas de animación y movimientos que acompañen la idea de ascenso, estabilidad y altura.\n- Estética unificada: mediante control de color, persistencia de estilo, lookup tables y prompts entrenados por agentes propios, para mantener identidad visual."
     },
-    // LINK VIMEO NATIVO
     videos: [
       { title: "Main Video", src: "https://player.vimeo.com/video/1140113744?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" }
     ],
@@ -44,7 +66,7 @@ export const projects: Project[] = [
     tools: ["Nano Banana", "Imagen 4", "Photoshop", "Veo 3", "Premiere", "DaVinci Resolve", "Suno", "Eleven Labs"]
   },
 
-  // 3. MILKSHAKE IPA (DOS VIDEOS)
+  // 4. MILKSHAKE IPA (DOS VIDEOS)
   {
     id: 'milkshake-ipa',
     title: { en: "MILKSHAKE IPA", es: "MILKSHAKE IPA" },
@@ -56,7 +78,6 @@ export const projects: Project[] = [
       en: "While most IPAs are associated with colder moments, Milk Shake IPA broke the mold with an unexpected twist: a bold yet refreshing beer infused with passion fruit, maracuya, mango, vanilla, and banana.\n\nBased on that strategy, we developed a fully AI-crafted conceptual and visual campaign, inspired by the iconic Argentine beer commercials of the 1980s — warm light, exaggerated smiles, unforgettable jingles, voice-overs with the era’s signature tone, and a perfectly consistent aesthetic.\n\nEvery piece was designed to reposition the IPA within the summer mindset, blending nostalgia, innovation, and top-level creative and technical execution.",
       es: "Mientras que la mayoría de las IPAs se asocian con momentos más fríos, Milk Shake IPA rompió el molde con un giro inesperado: una cerveza audaz pero refrescante infusionada con maracuyá, mango, vainilla y banana.\n\nBasados en esa estrategia, desarrollamos una campaña conceptual y visual totalmente creada con IA, inspirada en los icónicos comerciales de cerveza argentinos de los años 80: luz cálida, sonrisas exageradas, jingles inolvidables, locuciones con el tono característico de la época y una estética perfectamente consistente.\n\nCada pieza fue diseñada para reposicionar la IPA dentro de la mentalidad veraniega, mezclando nostalgia, innovación y una ejecución creativa y técnica de alto nivel."
     },
-    // LINKS VIMEO NATIVOS (DOS VIDEOS)
     videos: [
       { title: "Team Verano", src: "https://player.vimeo.com/video/1140113315?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" },
       { title: "Instagrameable", src: "https://player.vimeo.com/video/1140108634?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" }

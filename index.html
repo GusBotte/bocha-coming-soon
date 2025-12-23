@@ -2,9 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/RV8vQSyH/logobocha-2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bocha Studio</title>
     
+    <!-- 1. TÍTULO OFICIAL -->
+    <title>Bocha Studio | Creative AI Hub & Storytelling</title>
+
+    <!-- 2. META DESCRIPTION -->
+    <meta name="description" content="Bocha is a creative studio merging human imagination with artificial intelligence. We produce AI-driven audiovisual content, generative video, and advertising campaigns. Home of Vibe-Editing." />
+
+    <!-- 3. KEYWORDS -->
+    <meta name="keywords" content="Creative AI, Generative Video, Storytelling, Vibe-Editing, AI Studio, Advertising, Motion Graphics, Argentina, Global" />
+
+    <!-- 4. AUTOR -->
+    <meta name="author" content="Bocha Studio" />
+
+    <!-- 5. OPEN GRAPH -->
+    <meta property="og:title" content="Bocha Studio | Creative AI Hub" />
+    <meta property="og:description" content="Where human imagination fuses with artificial intelligence to create visual experiences that defy logic." />
+    <meta property="og:image" content="https://i.postimg.cc/RV8vQSyH/logobocha-2.png" />
+    <meta property="og:url" content="https://www.bocha.net" />
+    <meta property="og:type" content="website" />
+
     <!-- React Dependencies -->
     <script type="importmap">
 {
@@ -37,20 +56,19 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'], // Changed default to Inter for readability
-              logo: ['Anton', 'sans-serif'], // Kept Anton for Headlines/Logo
+              sans: ['Inter', 'sans-serif'],
+              logo: ['Anton', 'sans-serif'],
             },
             colors: {
               'bocha-pink': '#FF9EB5',
               'bocha-black': '#000000',
-              // Mapping legacy colors to new brand identity (White & Pink only)
               bocha: {
                 bg: '#000000',
                 card: '#121212',
                 pink: '#FF9EB5',
-                cyan: '#FF9EB5',   // Remap cyan to pink
-                purple: '#FF9EB5', // Remap purple to pink
-                yellow: '#FF9EB5', // Remap yellow to pink
+                cyan: '#FF9EB5',
+                purple: '#FF9EB5',
+                yellow: '#FF9EB5',
                 text: '#ffffff',
                 muted: '#888888'
               },
@@ -90,49 +108,32 @@
       }
     </script>
 
-    <!-- The Nuclear Solution Styles -->
+    <!-- ESTILOS CRÍTICOS -->
     <style>
       :root {
         --bocha-pink: #FF9EB5;
       }
       
-      body {
-        font-family: 'Inter', sans-serif !important; /* Default finer font for body */
-        background-color: #000000 !important;
-        color: #FFFFFF !important;
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      /* Force Anton ONLY on headings and logo classes */
-      h1, h2, h3, h4, h5, h6, .font-logo {
+      /* User requested global Anton font override */
+      * {
         font-family: 'Anton', sans-serif !important;
         letter-spacing: 0.04em; 
       }
 
-      /* Clases forzadas para el color de acento */
-      .text-bocha-pink, .text-magenta-500, .text-fuchsia-500 {
-        color: #FF9EB5 !important;
-      }
-      .bg-bocha-pink, .bg-magenta-500, .bg-fuchsia-500 {
-        background-color: #FF9EB5 !important;
-      }
-      .border-bocha-pink {
-        border-color: #FF9EB5 !important;
+      body {
+        background-color: #000000 !important;
+        color: #FFFFFF !important;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
       }
 
-      /* Legacy overrides to ensure complete rebranding */
-      .text-bocha-cyan, .text-bocha-purple, .text-bocha-yellow {
-        color: #FF9EB5 !important;
-      }
-      .bg-bocha-cyan, .bg-bocha-purple, .bg-bocha-yellow {
-        background-color: #FF9EB5 !important;
-      }
-      .border-bocha-cyan, .border-bocha-purple {
-        border-color: #FF9EB5 !important;
-      }
+      /* Utility class overrides */
+      .text-bocha-pink { color: #FF9EB5 !important; }
+      .bg-bocha-pink { background-color: #FF9EB5 !important; }
+      .border-bocha-pink { border-color: #FF9EB5 !important; }
 
-      /* Utility */
       .no-scrollbar::-webkit-scrollbar {
           display: none;
       }
