@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/credenciales",
+      "destination": "https://docs.google.com/presentation/d/15FdWI7mPw0PjxoVkYnvxMzvq2y3KH_u2CFHae7H_zW4/edit",
+      "permanent": true
+    }
+  ]
+}
