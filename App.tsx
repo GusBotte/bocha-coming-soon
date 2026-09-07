@@ -26,6 +26,9 @@ const AppContent: React.FC = () => {
   // Hook for language
   const { language } = useLanguage();
 
+  // Credentials page
+const isCredentialsPage = window.location.pathname === '/credenciales';
+
   // Load from localStorage on mount
   useEffect(() => {
     const savedProjects = localStorage.getItem('bocha_projects');
@@ -53,6 +56,19 @@ const AppContent: React.FC = () => {
     setCurrentView(ViewState.WORKFLOW_DETAIL);
     window.scrollTo(0, 0);
   };
+
+  if (isCredentialsPage) {
+  return (
+    <div className="w-screen h-screen bg-black">
+      <iframe
+        src="https://docs.google.com/presentation/d/1C7Y9f-RGuW4pkAgI4tz8ZEcn5yy2GP39_WP4LhJ7vcA/embed?start=false&loop=false&delayms=3000"
+        className="w-full h-full border-0"
+        allowFullScreen
+        title="BOCHA Credenciales"
+      />
+    </div>
+  );
+}
 
   const renderView = () => {
     switch (currentView) {
