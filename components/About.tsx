@@ -29,12 +29,11 @@ const About: React.FC = () => {
       <div 
         className="relative w-full max-w-5xl overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-bocha-pink/50 hover:shadow-[0_0_30px_rgba(255,158,181,0.1)] animate-slide-up"
         style={{ animationDelay: '0.2s' }}
-        onMouseLeave={() => setActiveBio(null)}
       >
         <img 
           src="https://i.postimg.cc/NFq1HvYv/Foto-bocha.png" 
           alt="Gustavo & Alvaro" 
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover aspect-[4/3] md:aspect-video bg-white/5"
         />
 
         {/* Interactive Overlays */}
@@ -44,6 +43,7 @@ const About: React.FC = () => {
            <div 
              className={`w-1/2 h-full cursor-pointer transition-all duration-500 flex items-end justify-center pb-8 group relative ${activeBio === 'gustavo' ? 'bg-bocha-pink/60' : 'hover:bg-bocha-pink/10'}`}
              onMouseEnter={() => setActiveBio('gustavo')}
+             onClick={() => setActiveBio('gustavo')}
            >
               <span className={`text-white font-logo text-3xl uppercase tracking-widest transition-all duration-300 drop-shadow-md transform ${activeBio === 'gustavo' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                 Gustavo
@@ -54,6 +54,7 @@ const About: React.FC = () => {
            <div 
              className={`w-1/2 h-full cursor-pointer transition-all duration-500 flex items-end justify-center pb-8 group relative ${activeBio === 'alvaro' ? 'bg-bocha-pink/60' : 'hover:bg-bocha-pink/10'}`}
              onMouseEnter={() => setActiveBio('alvaro')}
+             onClick={() => setActiveBio('alvaro')}
            >
               <span className={`text-white font-logo text-3xl uppercase tracking-widest transition-all duration-300 drop-shadow-md transform ${activeBio === 'alvaro' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                 Álvaro
@@ -64,7 +65,7 @@ const About: React.FC = () => {
       </div>
 
       {/* Bio Containers */}
-      <div className={`w-full max-w-4xl mt-12 min-h-[300px] transition-opacity duration-500 ${activeBio ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`w-full max-w-4xl mt-12 transition-opacity duration-500 ${activeBio ? 'opacity-100 min-h-[300px]' : 'opacity-0 h-0 overflow-hidden'}`}>
         
         {/* Gustavo Bio */}
         {activeBio === 'gustavo' && (
